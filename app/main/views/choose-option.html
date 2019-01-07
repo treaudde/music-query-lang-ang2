@@ -1,0 +1,7 @@
+<div class="list-group">
+    <a *ngFor="#option of options"  
+        class="list-group-item"
+        [routerLink]="[option.routerName]">
+        {{option.name}}
+    </a>
+</div>

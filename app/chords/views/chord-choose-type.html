@@ -1,0 +1,54 @@
+<h2>Chords / {{chosenNote}}</h2>
+<p>
+    <a [routerLink]="['Options']">Start Over</a> 
+</p>
+
+<h3>3 Notes</h3>
+<div class="list-group">
+    <a *ngFor="#three_note_chord of chordTypes.three" 
+        [innerHtml]="three_note_chord"
+        class="list-group-item" 
+        (click)="chooseType(three_note_chord)"
+        >  
+    </a>
+</div>
+
+<h3>4 Notes</h3>
+<div class="list-group">
+    <a *ngFor="#four_note_chord of chordTypes.four" 
+        [innerHtml]="four_note_chord"
+        class="list-group-item" 
+        (click)="chooseType(four_note_chord)"
+        >  
+    </a>
+</div>
+
+<h3>5 Notes</h3>
+<div class="list-group">
+    <a *ngFor="#five_note_chord of chordTypes.five" 
+        [innerHtml]="five_note_chord"
+        class="list-group-item" 
+        (click)="chooseType(five_note_chord)"
+        >  
+    </a>
+</div>
+
+<h3>6 Notes</h3>
+<div class="list-group">
+    <a *ngFor="#six_note_chord of chordTypes.six" 
+        [innerHtml]="six_note_chord"
+        class="list-group-item" 
+        (click)="chooseType(six_note_chord)"
+        >  
+    </a>
+</div>
+
+<h3>7 Notes</h3>
+<div class="list-group">
+    <a *ngFor="#seven_note_chord of chordTypes.seven" 
+        [innerHtml]="seven_note_chord"
+        class="list-group-item"
+        (click)="chooseType(seven_note_chord)"
+        >  
+    </a>
+</div>

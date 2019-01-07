@@ -1,0 +1,12 @@
+<h2>Scale</h2>
+<p>
+    <a [routerLink]="['Options']">Start Over</a> 
+</p>
+
+<div class="list-group">
+    <a *ngFor="#note of notes"  
+        class="list-group-item" 
+        [innerHtml]="note.getNoteDisplayName()"
+        (click)="chooseNote(note)">  
+    </a>
+</div>
